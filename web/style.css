@@ -1,0 +1,185 @@
+:root {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f3f6f9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+label {
+    display: block;
+    margin: 16px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aebbc8;
+    border-radius: 6px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #1769aa;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #115080;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.pagina-login {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.cartao {
+    padding: 24px;
+    background: white;
+    border: 1px solid #dce3ea;
+    border-radius: 10px;
+}
+
+.login {
+    width: min(100%, 380px);
+}
+
+.login button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mensagem {
+    min-height: 1.3em;
+    margin-bottom: 0;
+}
+
+.mensagem.erro {
+    color: #a12626;
+}
+
+.mensagem.sucesso {
+    color: #18703c;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px max(20px, calc((100vw - 960px) / 2));
+    background: white;
+    border-bottom: 1px solid #dce3ea;
+}
+
+.topo h1 {
+    margin: 0;
+}
+
+.usuario,
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.conteudo {
+    display: grid;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 16px;
+}
+
+.acoes {
+    margin-top: 20px;
+}
+
+.secundario {
+    background: #e8edf2;
+    color: #1f2937;
+}
+
+.secundario:hover {
+    background: #d6e0e9;
+}
+
+.lista {
+    display: grid;
+    gap: 12px;
+}
+
+.evento {
+    padding: 16px;
+    border: 1px solid #dce3ea;
+    border-radius: 8px;
+}
+
+.evento h3 {
+    margin: 0 0 8px;
+}
+
+.evento p {
+    margin: 6px 0;
+}
+
+.evento .acoes {
+    margin-top: 14px;
+}
+
+@media (max-width: 720px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .campos {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes {
+        flex-wrap: wrap;
+    }
+}
